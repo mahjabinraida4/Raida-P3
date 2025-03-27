@@ -84,6 +84,10 @@ small {
   font-family: "Edu Australia VIC WA NT Hand Precursive";
   background-image: url("https://www.kawalingpinoy.com/wp-content/uploads/2020/07/ALMOND-JELLO-18-730x1095.jpg");
 }
+.seconddessert{
+	font-family: "Edu Australia VIC WA NT Hand Precursive";
+	background-image: url("https://asianinspirations.com.au/wp-content/uploads/2019/01/R01811_Mung_Bean_Rice_Crepe.jpg");
+}
 .price {
   float: right;
 }
@@ -139,13 +143,20 @@ small {
   <small>Almond jelly is one of the simplest and most popular Chinese desserts around. Made with almond-flavored gelatin and fruit salad swimming in a sweet syrup, it’s a light treat to cleanse the palate. Almond jelly is a breeze to make and only calls for milk, ground almonds, water, and gelatin or agar-agar.</small></p>
 </div>
 
-<input id="Name" placeholder="Your name">
-<br><br>
-  <input id="Email" type="email" placeholder="Your email">
+<div class="seconddessert">
+<input type="number" min="0" style="width: 50px"class="quantities">
+  <p>Mung Bean Rice Crepe <span class="price">$25</span><br />
+  <small>Mung Bean Rice Crepe, or Kanom Tua Pab, is a Thai dessert or snack made from glutinous rice flour, filled and coated with steamed mung bean and shredded coconut, resembling the shape of a "tua pab" bean.</small></p>
+</div>
+
   <br><br>
+<input id="Name" placeholder="Your name">
+
+  <input id="Email" type="email" placeholder="Your email">
+
   <input id="submit" type="submit">
   <br><br>
-  <br><br>
+
 
 
 <script>
@@ -183,7 +194,7 @@ small {
   const Name = document.querySelector("#Name") 
   const Email = document.querySelector("#Email")
   const quantities = document.querySelectorAll(".quantities") 
-  const itemsList = ["Duck", "Chicken", "Almond Jelly"]
+  const itemsList = ["Duck", "Chicken", "Almond Jelly", "Rice Crepe"]
 
   const prices = document.querySelectorAll(".price")
   document.querySelector('#submit').addEventListener('click', Submit)
